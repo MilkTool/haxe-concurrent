@@ -26,10 +26,10 @@ class Macros {
             def.exists("neko") ||
             def.exists("python")
         ) {
-            trace("[INFO] Setting compiler define 'threads'.");
+            // trace("[INFO] Setting compiler define 'threads'.");
             Compiler.define("threads");
         } else {
-            trace("[INFO] NOT setting compiler define 'threads'.");
+            // trace("[INFO] NOT setting compiler define 'threads'.");
         }
         return macro {}
     }
